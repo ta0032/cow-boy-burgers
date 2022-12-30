@@ -56,6 +56,7 @@ function App() {
           </div>
         </header>
 
+        {/*  */}
         <div className="content__top">
           <h3>Все бургеры</h3>
 
