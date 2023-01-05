@@ -1,0 +1,228 @@
+.overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.drawer {
+  position: absolute;
+  width: 32%;
+  height: 100%;
+  right: 0;
+  padding: 30px;
+  background: url("../../public/img/outDrawer.svg");
+  background-size: cover;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+
+  .drawer__header {
+    display: flex;
+    justify-content: space-between;
+
+    .drawer__header__left {
+      display: flex;
+
+      img {
+        width: 29px;
+        height: 29px;
+        margin-right: 17px;
+      }
+
+      h2 {
+        margin: 0;
+      }
+    }
+
+    .drawer__header__right {
+      display: flex;
+      align-items: stretch;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+      }
+
+      h2 {
+        height: 21px;
+        width: 74px;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #b6b6b6;
+      }
+    }
+  }
+
+  .drawer__area {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    .drawer__items {
+      padding-top: 18px;
+
+      .drawer__item {
+        display: flex;
+        width: 100%;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        padding-top: 30px;
+        margin-top: 30px;
+        flex-flow: column;
+
+        .drawer__item_head {
+          display: flex;
+          padding-left: 46px;
+          align-items: center;
+
+          .drawer__item-img {
+            display: flex;
+            align-items: center;
+
+            img {
+              width: 80px;
+              height: 80px;
+              object-fit: cover;
+              border: 1px solid #ffffff;
+            }
+          }
+
+          h3 {
+            margin: 0;
+            margin-left: 28px;
+            height: 27px;
+            width: 245px;
+            font-size: 22px;
+          }
+        }
+
+        .drawer__item__foot {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 35px;
+          margin-top: 12px;
+          margin-bottom: 15px;
+
+          .drawer__item-count {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 102px;
+
+            b {
+              height: 27px;
+              width: 188px;
+              font-size: 22px;
+              font-style: bold;
+              text-align: center;
+            }
+          }
+          .drawer__item-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 33%;
+
+            b {
+              font-weight: bold;
+              font-size: 22px;
+              letter-spacing: 0.01em;
+            }
+          }
+
+          .drawer__item-remove {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 4%;
+          }
+        }
+      }
+
+      .drawer__bottom-details {
+        display: flex;
+        flex-flow: column;
+        padding-top: 30px;
+
+        span {
+          margin-bottom: 5px;
+          width: 228px;
+          height: 27px;
+          font-size: 22px;
+
+          b {
+            color: #f6eb8c;
+          }
+        }
+      }
+    }
+
+    .drawer__buttons {
+      .drawer__pay {
+        width: 100%;
+        height: 46px;
+        margin-bottom: 15px;
+        background-color: #739010;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.1s ease-in-out;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          width: 185px;
+          height: 16px;
+          font-size: 16px;
+        }
+
+        &:hover {
+          background-color: #f6eb8c;
+        }
+
+        &:active {
+          color: #fff;
+        }
+      }
+
+      .drawer__back {
+        width: 100%;
+        height: 46px;
+        margin-bottom: 15px;
+        background-color: #f9f9f9;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.1s ease-in-out;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b6b6b6;
+
+        h3 {
+          width: 185px;
+          height: 16px;
+          font-size: 16px;
+        }
+
+        &:hover {
+          background-color: #f6eb8c;
+        }
+
+        &:active {
+          background-color: #739010;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
