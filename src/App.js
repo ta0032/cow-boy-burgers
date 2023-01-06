@@ -1,5 +1,8 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./scss/App.scss";
+
 import { Header } from "./components/Header";
 import { Product } from "./components/Product";
 import { Footer } from "./components/Footer";
@@ -9,28 +12,33 @@ import { Drawer } from "../src/components/Drawer";
 
 function App() {
   return (
-    <div className="App">
-      <Drawer />
+    <Router>
+      <div className="App">
+        <Drawer />
 
-      <div className="wrapper">
-        <Header />
+        <div className="wrapper">
+          <Header />
 
-        <div className="content__top">
-          <div className="content__title">
-            <h3>Бургеры</h3>
+          <div className="content__top">
+            <div className="content__title">
+              <h3>Бургеры</h3>
+            </div>
+            {/* <Sort /> */}
           </div>
-          <Sort />
-        </div>
-        <div className="content">
-          <Categories />
-          <div className="products">
-            <Product />
+          <div className="content">
+            {/* <Categories /> */}
+
+            <div ></div>
+
+            {/* <div className="products">
+              <Product />
+            </div> */}
           </div>
         </div>
+
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

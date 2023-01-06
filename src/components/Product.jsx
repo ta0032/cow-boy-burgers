@@ -3,12 +3,12 @@ import React from "react";
 export const Product = () => {
   return (
     <div className="product">
-      <img src="./img/burgers/am1.jpg"></img>
+      <img src="./img/burgers/am1.jpg" alt="Товар"></img>
       <div className="product__list">
         <h4>Американская мечта 1</h4>
         <div className="product__list__info">
           <b>370 ₽</b>
-          <div class="button button--outline button--add">
+          <div className="button button--outline button--add">
             <svg
               width="12"
               height="12"
