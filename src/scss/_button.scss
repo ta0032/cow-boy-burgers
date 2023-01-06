@@ -143,3 +143,35 @@
     }
   }
 }
+
+.lk__button__head {
+  width: 411px;
+  height: 58px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c2c2c;
+
+  h3 {
+    width: 130px;
+    height: 18px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: #f6eb8c;
+  }
+
+  &:active {
+    background-color: #739010;
+
+    color: #2c2c2c;
+  }
+}

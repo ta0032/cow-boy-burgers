@@ -1,0 +1,90 @@
+.registration {
+  margin-top: 30px;
+  margin-left: 105px;
+  padding: 30px;
+  width: 800px;
+  height: 345px;
+  background: url("../../public/img/outDrawer.svg");
+  border-radius: 30px;
+
+  .lk__item {
+    margin-bottom: 30px;
+    width: 322px;
+
+    h3 {
+      margin: 0;
+      margin-bottom: 10px;
+      width: 237px;
+      height: 20px;
+      font-size: 18px;
+      font-weight: lighter;
+      color: #ffffff;
+    }
+
+    input {
+      padding: 0;
+      padding-left: 15px;
+      border: 0;
+      width: 95.5%;
+      height: 40px;
+      border-radius: 4px;
+      background-color: #f4f4f4;
+      font-family: "Proxima Nova";
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input::placeholder {
+      color: #aaaaaa;
+      font-family: "Proxima Nova";
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    input::-ms-reveal {
+      border: 1px solid transparent;
+      border-radius: 50%;
+      box-shadow: 0 0 3px currentColor;
+    }
+  }
+
+  .lk__button {
+    width: 100%;
+    height: 55px;
+    margin-bottom: 15px;
+    background-color: #739010;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      width: 130px;
+      height: 18px;
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: #f6eb8c;
+    }
+
+    &:active {
+      background-color: #739010;
+
+      color: #2c2c2c;
+    }
+  }
+
+  .lk__lostpsw {
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:active {
+      color: #f6eb8c;
+    }
+  }
+}

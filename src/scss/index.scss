@@ -2,6 +2,8 @@
 @import "./Drawer";
 @import "./Header";
 @import "./Footer";
+@import "./Login";
+@import "./Registration";
 
 @keyframes App-logo-spin {
   from {
@@ -56,6 +58,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./fonts/ProximaNova-Light.eot");
+  src: local("./fonts/Proxima Nova Light"), local("ProximaNova-Light"),
+    url("./fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/ProximaNova-Light.woff") format("woff"),
+    url("./fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   height: 100vh;
@@ -80,7 +93,7 @@ body {
       h3 {
         margin: 0;
         height: 40px;
-        width: 196px;
+        width: 256px;
         font-size: 32px;
       }
     }

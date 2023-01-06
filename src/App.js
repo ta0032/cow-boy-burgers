@@ -9,6 +9,9 @@ import { Footer } from "./components/Footer";
 import { Categories } from "./components/Categories";
 import { Sort } from "./components/Sort";
 import { Drawer } from "../src/components/Drawer";
+import { Login } from "../src/components/Login";
+import { Registration } from "./components/Registration";
+import { Lk } from "./components/Lk";
 
 function App() {
   return (
@@ -21,15 +24,17 @@ function App() {
 
           <div className="content__top">
             <div className="content__title">
-              <h3>Бургеры</h3>
+              <h3>Личный кабинет</h3>
             </div>
             {/* <Sort /> */}
+
+            <Lk />
           </div>
           <div className="content">
             {/* <Categories /> */}
 
-            <div ></div>
-
+            {/* <Login /> */}
+            <Registration />
             {/* <div className="products">
               <Product />
             </div> */}
