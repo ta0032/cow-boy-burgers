@@ -4,6 +4,8 @@
 @import "./Footer";
 @import "./Login";
 @import "./Registration";
+@import "./Categories";
+@import "./Profile";
 
 @keyframes App-logo-spin {
   from {
@@ -76,6 +78,7 @@ body {
   color: #ffffff;
   background: url("../../public/img/OUT.jpg");
   position: relative;
+  box-sizing: border-box;
 
   .wrapper {
     padding: 93px 8% 0px;
@@ -159,44 +162,6 @@ body {
 
   .content {
     display: flex;
-
-    .categories {
-      margin-top: 33px;
-      max-height: 550px;
-      position: sticky;
-      top: 33px;
-      margin-right: 1%;
-      color: #2c2c2c;
-
-      .category {
-        width: 185px;
-        height: 46px;
-        margin-bottom: 15px;
-        background-color: #f9f9f9;
-        border-radius: 30px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.1s ease-in-out;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h3 {
-          width: 185px;
-          height: 16px;
-          font-size: 16px;
-        }
-      }
-      .category:hover {
-        background-color: #f6eb8c;
-      }
-
-      .category:active {
-        background-color: #739010;
-        color: #fff;
-      }
-    }
 
     .products {
       display: flex;

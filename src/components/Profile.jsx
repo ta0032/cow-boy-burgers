@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Registration = () => {
+export const Profile = () => {
   return (
-    <div className="registration">
+    <div className="profile">
       <div className="lk__items">
         <div className="lk__item">
           <h3 className="lk__title">Имя</h3>
@@ -33,21 +33,21 @@ export const Registration = () => {
           />
         </div>
         <div className="lk__item">
-          <h3 className="lk__title">Введите пароль</h3>
+          <h3 className="lk__title">Введите новый пароль</h3>
           <input className="lk__psw__input" type={"password"} />
         </div>{" "}
         <div className="lk__item">
-          <h3 className="lk__title">Введите пароль ещё раз</h3>
+          <h3 className="lk__title">Введите новый пароль ещё раз</h3>
+          <input className="lk__psw__input" type={"password"} />
+        </div>
+        <div className="lk__item">
+          <h3 className="lk__title">Введите актуальный пароль</h3>
           <input className="lk__psw__input" type={"password"} />
         </div>
       </div>
       <div className="lk__button">
-        <h3>Регистрация</h3>
+        <h3>Редактировать</h3>
       </div>
-      <span className="lk__lostpsw">
-        <img src="./img/approve.svg" alt="approve" />Я даю согласие на обработку
-        персональных данных
-      </span>
     </div>
   );
 };

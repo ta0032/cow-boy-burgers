@@ -12,6 +12,8 @@ import { Drawer } from "../src/components/Drawer";
 import { Login } from "../src/components/Login";
 import { Registration } from "./components/Registration";
 import { Lk } from "./components/Lk";
+import { Nav } from "./components/Nav";
+import { Profile } from "./components/Profile";
 
 function App() {
   return (
@@ -26,18 +28,21 @@ function App() {
             <div className="content__title">
               <h3>Личный кабинет</h3>
             </div>
-            {/* <Sort /> */}
+            <Sort />
 
-            <Lk />
+            {/* <Lk /> */}
           </div>
           <div className="content">
-            {/* <Categories /> */}
+            <Categories />
+
+            {/* <Nav /> */}
+            {/* <Profile /> */}
 
             {/* <Login /> */}
-            <Registration />
-            {/* <div className="products">
+            {/* <Registration /> */}
+            <div className="products">
               <Product />
-            </div> */}
+            </div>
           </div>
         </div>
 
