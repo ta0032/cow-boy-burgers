@@ -1,49 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./scss/App.scss";
 
 import { Header } from "./components/Header";
-import { Product } from "./components/Product";
 import { Footer } from "./components/Footer";
-import { Categories } from "./components/Categories";
-import { Sort } from "./components/Sort";
+
 import { Drawer } from "../src/components/Drawer";
-import { Login } from "../src/components/Login";
-import { Registration } from "./components/Registration";
 import { Lk } from "./components/Lk";
-import { Nav } from "./components/Nav";
-import { Profile } from "./components/Profile";
+import { Login } from "./components/Login";
+import { Registration } from "./components/Registration";
+import { Home } from "./components/Home";
 
 function App() {
+  const [cartViews, setCartViews] = useState(false);
+
   return (
     <Router>
       <div className="App">
-        <Drawer />
-
+        <Drawer
+          cartView={cartViews}
+          onClickCartHdr={() => {
+            setCartViews(false);
+          }}
+        />
         <div className="wrapper">
-          <Header />
+          <Header onClickCartBtn={() => setCartViews(true)} />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
 
-          <div className="content__top">
-            <div className="content__title">
-              <h3>Личный кабинет</h3>
-            </div>
-            <Sort />
-
-            {/* <Lk /> */}
-          </div>
-          <div className="content">
-            <Categories />
-
-            {/* <Nav /> */}
-            {/* <Profile /> */}
-
-            {/* <Login /> */}
-            {/* <Registration /> */}
-            <div className="products">
-              <Product />
-            </div>
-          </div>
+            <Route path="/Profile" element={<Lk />}></Route>
+            <Route path="/Login" element={<Login />}></Route>
+            <Route path="/Registration" element={<Registration />}></Route>
+          </Routes>
         </div>
 
         <Footer />

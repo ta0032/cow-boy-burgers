@@ -10,6 +10,11 @@ header {
       margin-right: 15px;
       height: 45px;
       width: 90px;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        transform: scale(1.03);
+      }
     }
 
     h1 {
@@ -17,7 +22,7 @@ header {
       height: 54px;
       width: 715px;
       font-size: 48px;
-      color: #fffff;
+      color: #ffffff;
     }
 
     h4 {
@@ -38,6 +43,11 @@ header {
       height: 50px;
       width: 50px;
       cursor: pointer;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        transform: scale(1.03);
+      }
     }
 
     .button__cart {
@@ -50,6 +60,11 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        transform: scale(1.03);
+      }
 
       .button__delimiter {
         width: 1px;

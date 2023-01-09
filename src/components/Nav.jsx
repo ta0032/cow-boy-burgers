@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Nav = () => {
   return (
     <div className="categories">
-      <div className="category">
-        <h3>Профиль</h3>
-      </div>
+      <Link to="/Profile">
+        <div className="category">
+          <h3>Профиль</h3>
+        </div>
+      </Link>
       <div className="category">
         <h3>Адреса</h3>
       </div>

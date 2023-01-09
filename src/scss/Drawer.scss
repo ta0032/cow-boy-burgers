@@ -1,11 +1,14 @@
 .overlay {
-  display: none;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
+  overflow: hidden;
   z-index: 3;
 }
 
@@ -25,13 +28,14 @@
   width: 32%;
   height: 100%;
   right: 0;
-  bottom: 0;
   padding: 30px;
   padding-bottom: 50px;
   background: url("../../public/img/outDrawer.svg");
   background-size: cover;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
-  z-index: 4;
+  transform: translateX(100%);
+  transition: transform 0.35s ease-in-out;
+  z-index: 3;
 
   .drawer__header {
     display: flex;

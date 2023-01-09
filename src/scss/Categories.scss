@@ -4,7 +4,6 @@
   position: sticky;
   top: 33px;
   margin-right: 1%;
-  color: #2c2c2c;
 
   .category {
     width: 185px;
@@ -16,6 +15,8 @@
     cursor: pointer;
     transition: background-color 0.1s ease-in-out;
     text-align: center;
+    color: #2c2c2c;
+
     display: flex;
     align-items: center;
     justify-content: center;

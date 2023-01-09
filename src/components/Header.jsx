@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+export const Header = ({ onClickCartBtn }) => {
   return (
     <header>
       <div className="header__logo">
@@ -14,8 +14,10 @@ export const Header = () => {
         </div>
       </div>
       <div className="header__icons">
-        <img src="/img/union.svg" alt="Union"></img>
-        <div className="header__cart">
+        <Link to="/Profile">
+          <img src="/img/union.svg" alt="Union"></img>
+        </Link>
+        <div className="header__cart" onClick={onClickCartBtn}>
           <button className="button__cart">
             <span>520 ₽</span>
             <div className="button__delimiter"></div>
