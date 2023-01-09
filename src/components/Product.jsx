@@ -1,13 +1,13 @@
 import React from "react";
 
-export const Product = () => {
+export const Product = (burger) => {
   return (
     <div className="product">
-      <img src="./img/burgers/am1.jpg" alt="Товар"></img>
+      <img src={burger.imageUrl} alt="Товар"></img>
       <div className="product__list">
-        <h4>Американская мечта 1</h4>
+        <h4>{burger.name}</h4>
         <div className="product__list__info">
-          <b>370 ₽</b>
+          <b>{burger.price} ₽</b>
           <div className="button button--outline button--add">
             <svg
               width="12"
