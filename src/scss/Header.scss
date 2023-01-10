@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
 
-  .header__logo {
+  .header-logo {
     display: flex;
     align-items: center;
 
@@ -34,7 +34,7 @@ header {
     }
   }
 
-  .header__icons {
+  .header-icons {
     display: flex;
     align-items: center;
 
@@ -50,7 +50,7 @@ header {
       }
     }
 
-    .button__cart {
+    .button-cart {
       height: 50px;
       width: 150px;
       border-radius: 30px;
@@ -66,7 +66,7 @@ header {
         transform: scale(1.03);
       }
 
-      .button__delimiter {
+      .button-cart__delimiter {
         width: 1px;
         height: 25px;
         background-color: rgba(255, 255, 255, 0.25);

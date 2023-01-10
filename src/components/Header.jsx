@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export const Header = ({ onClickCartBtn }) => {
   return (
     <header>
-      <div className="header__logo">
+      <div className="header-logo">
         <Link to="/">
           <img src="/img/logo_cbb.png" alt="Logo"></img>
         </Link>
@@ -13,14 +13,14 @@ export const Header = ({ onClickCartBtn }) => {
           <h4>Сочные бургеры, авторские хот-доги, супы, салаты и закуски.</h4>
         </div>
       </div>
-      <div className="header__icons">
+      <div className="header-icons">
         <Link to="/Profile">
           <img src="/img/union.svg" alt="Union"></img>
         </Link>
         <div className="header__cart" onClick={onClickCartBtn}>
-          <button className="button__cart">
+          <button className="button-cart">
             <span>520 ₽</span>
-            <div className="button__delimiter"></div>
+            <div className="button-cart__delimiter"></div>
             <svg
               width="18"
               height="18"

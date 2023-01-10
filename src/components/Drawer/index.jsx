@@ -1,11 +1,14 @@
 import React from "react";
 
-export const Drawer = ({ onClickCartHdr, cartView }) => {
+export const Drawer = ({ onClickCartClose, cartView }) => {
   return (
-    <div className={`overlay ${cartView ? "overlayVisible" : ""}`}>
+    <div
+      onClick={onClickCartClose}
+      className={`overlay ${cartView ? "overlayVisible" : ""}`}
+    >
       <div className="drawer">
         <div className="drawer__header">
-          <div className="drawer__header__left" onClick={onClickCartHdr}>
+          <div className="drawer__header__left" onClick={onClickCartClose}>
             <img src="../img/cart.svg" alt="Корзина"></img>
             <h2>Корзина</h2>
           </div>

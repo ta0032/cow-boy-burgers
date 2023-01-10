@@ -10,7 +10,7 @@ export const Registration = () => {
         </div>
 
         <Link to="/Login">
-          <div className="lk__button__head">
+          <div className="lk-button__head">
             <h3>Войти</h3>
           </div>
         </Link>

@@ -1,3 +1,9 @@
+button {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 .button {
   display: inline-block;
   background-color: #739010;
@@ -44,10 +50,6 @@
 
   &--black {
     background-color: black;
-
-    &:hover,
-    &:active {
-    }
   }
 
   &--outline {
@@ -144,7 +146,7 @@
   }
 }
 
-.lk__button__head {
+.lk-button__head {
   width: 411px;
   height: 58px;
   margin-bottom: 15px;
@@ -174,4 +176,45 @@
 
     color: #2c2c2c;
   }
+}
+
+.category {
+  width: 185px;
+  height: 46px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  text-align: center;
+  color: #2c2c2c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    width: 185px;
+    height: 16px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: #f6eb8c;
+  }
+
+  &:active {
+    background-color: #739010;
+    color: #fff;
+  }
+}
+
+.category.hover {
+  background-color: #f6eb8c;
+}
+
+.category.active {
+  background-color: #739010;
+  color: #fff;
 }

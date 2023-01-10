@@ -1,23 +1,16 @@
 import React from "react";
-import { Category } from "./Category";
 
-const cats = [
-  { cat: "Фирменные блюда" },
-  { cat: "Бургеры" },
-  { cat: "Хот-Доги" },
-  { cat: "Салаты" },
-  { cat: "Закуски" },
-  { cat: "Супы" },
-  { cat: "Гарниры" },
-  { cat: "Напитки" },
-  { cat: "Соусы" },
-];
-
-export const Categories = () => {
+export const Categories = ({ cats, onClickItem, activeCat }) => {
   return (
     <div className="categories">
       {cats.map((cats) => (
-        <Category {...cats} />
+        <button
+          onClick={() => onClickItem(cats.cat)}
+          className={`category ${activeCat === cats.cat ? "active" : ""}`}
+          key={cats.cat}
+        >
+          <h3>{cats.cat}</h3>
+        </button>
       ))}
     </div>
   );

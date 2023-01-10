@@ -13,7 +13,7 @@ footer {
   font-style: light;
   z-index: 2;
 
-  .footer__left {
+  .footer-left {
     display: flex;
     flex: 1.45;
     justify-content: space-around;
@@ -48,7 +48,7 @@ footer {
     }
   }
 
-  .footer__right {
+  .footer-right {
     display: flex;
     flex: 1;
     justify-content: right;
@@ -56,11 +56,10 @@ footer {
     &__links {
       display: flex;
       align-items: center;
-      img {
-        margin-left: 44px;
-      }
+      margin-left: 44px;
     }
   }
+
   img {
     height: 20px;
     width: 20px;

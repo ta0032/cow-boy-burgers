@@ -9,7 +9,7 @@ export const Login = () => {
           <h3>Личный кабинет</h3>
         </div>
         <Link to="/Registration">
-          <div className="lk__button__head">
+          <div className="lk-button__head">
             <h3>Регистрация</h3>
           </div>
         </Link>

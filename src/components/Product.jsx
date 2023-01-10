@@ -5,7 +5,7 @@ export const Product = (burger) => {
     <div className="product">
       <img src={burger.imageUrl} alt="Товар"></img>
       <div className="product__list">
-        <h4>{burger.name}</h4>
+        <h4>{burger.title}</h4>
         <div className="product__list__info">
           <b>{burger.price} ₽</b>
           <div className="button button--outline button--add">
