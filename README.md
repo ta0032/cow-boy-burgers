@@ -6,7 +6,7 @@
 
 <p>План проекта:</p>
 <ul>
-<li>1. Создание дизайна сайта в [Figma](https://www.figma.com/file/yNUc3prWxWe7CTOd78dUts/cow-boy-burgers?node-id=4%3A2&t=gzdAw3jFp1x3vOyP-0)</li>
+<li>1. Создание дизайна сайта в <a href="https://www.figma.com/file/yNUc3prWxWe7CTOd78dUts/cow-boy-burgers?node-id=4%3A2&t=gzdAw3jFp1x3vOyP-0">Figma<a></li>
 
 
 
