@@ -2,9 +2,23 @@ header {
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 992px) {
+    display: contents;
+  }
+
   .header-logo {
     display: flex;
     align-items: center;
+
+    @media (max-width: 1400px) {
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 992px) {
+      max-width: 75%;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
 
     img {
       margin-right: 15px;
@@ -18,25 +32,56 @@ header {
     }
 
     h1 {
-      margin: 0;
       height: 54px;
       width: 715px;
       font-size: 48px;
       color: #ffffff;
-    }
 
-    h4 {
-      margin: 0;
-      height: 36px;
-      width: 715px;
-      font-size: 24px;
-      color: #a7a7a7;
+      @media (max-width: 992px) {
+        max-width: 100%;
+        min-height: 100%;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 400px;
+        min-height: 150px;
+      }
+
+      h4 {
+        box-sizing: border-box;
+        height: 36px;
+        width: 715px;
+        font-size: 24px;
+        color: #a7a7a7;
+
+        @media (max-width: 992px) {
+          max-width: 75%;
+          height: 20px;
+        }
+
+        @media (max-width: 768px) {
+          max-width: 400px;
+          height: 60px;
+        }
+      }
     }
   }
 
   .header-icons {
     display: flex;
     align-items: center;
+
+    @media (max-width: 1400px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 992px) {
+      position: absolute;
+      top: 40px;
+      right: 8%;
+      flex-wrap: wrap;
+      z-index: 2;
+    }
 
     img {
       margin-right: 35px;

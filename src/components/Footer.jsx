@@ -6,10 +6,10 @@ export const Footer = () => {
       <div className="footer-left">
         <div className="footer-left__phone">
           <img src="./img/logo-phone.png" alt="phone"></img>
-          <a>+7 (929) 816-36-39</a>
+          <p>+7 (929) 816-36-39</p>
         </div>
         <div className="footer-left__address">
-          <a>Ростов-на-Дону, Социалистическая 46а</a>
+          <p>Ростов-на-Дону, Социалистическая 46а</p>
         </div>
         <div className="footer-left__times">
           <time>ПН-ЧТ 12:00-00:00</time>

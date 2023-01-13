@@ -10,6 +10,7 @@ import { Product } from "./Product";
 import { Profile } from "./Profile";
 import { Registration } from "./Registration";
 import { Sort } from "./Sort";
+import { ProductBlock } from "./ProductBlock/index";
 
 export {
   Categories,
@@ -24,4 +25,5 @@ export {
   Profile,
   Registration,
   Sort,
+  ProductBlock,
 };

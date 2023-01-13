@@ -8,6 +8,11 @@ export const Sort = ({ items }) => {
     setSortAct(!sortAct);
   };
 
+  const setNewActiveSort = (item) => {
+    setActiveSort(item);
+    setSortAct(false);
+  };
+
   const clickOnBody = (tap) => {
     if (!tap.path.includes(sortRef.current)) {
       setSortAct();
@@ -16,7 +21,6 @@ export const Sort = ({ items }) => {
 
   const sortRef = useRef();
 
-  console.log(items);
   useEffect(() => {
     document.body.addEventListener("click", clickOnBody);
   }, []);
@@ -45,7 +49,7 @@ export const Sort = ({ items }) => {
           <ul>
             {items.map((item) => (
               <li
-                onClick={() => setActiveSort(item)}
+                onClick={() => setNewActiveSort(item)}
                 className={`${activeSort === item ? "active" : ""}`}
               >
                 {item}

@@ -6,12 +6,10 @@ export const Header = ({ onClickCartBtn }) => {
     <header>
       <div className="header-logo">
         <Link to="/">
-          <img src="/img/logo_cbb.png" alt="Logo"></img>
+          <img src="./img/logo_cbb.png" alt="Logo"></img>
         </Link>
-        <div>
-          <h1>COW-BOY BURGERS</h1>
-          <h4>Сочные бургеры, авторские хот-доги, супы, салаты и закуски.</h4>
-        </div>
+        <h1>COW-BOY BURGERS</h1>
+        <h4>Сочные бургеры, авторские хот-доги, супы, салаты и закуски.</h4>
       </div>
       <div className="header-icons">
         <Link to="/Profile">

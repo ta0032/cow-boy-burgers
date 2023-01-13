@@ -59,8 +59,8 @@ export const Registration = () => {
             <h3>Регистрация</h3>
           </div>
           <span className="lk__lostpsw">
-            <img src="./img/approve.svg" alt="approve" />Я даю согласие на
-            обработку персональных данных
+            <img src="./assets/img/approve.svg" alt="approve" />Я даю согласие
+            на обработку персональных данных
           </span>
         </div>
       </div>

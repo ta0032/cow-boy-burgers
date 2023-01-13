@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./scss/App.scss";
@@ -15,79 +15,26 @@ import {
 
 function App() {
   const [cartViews, setCartViews] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const burgers = [
-    {
-      imageUrl: "./img/burgers/am1.jpg",
-      title: "Американская мечта 1",
-      price: 370,
-    },
-    {
-      imageUrl: "./img/burgers/am2.jpg",
-      title: "Американская мечта 2",
-      price: 370,
-    },
-    {
-      imageUrl: "./img/burgers/cb.jpg",
-      title: "Цезарь бургер",
-      price: 320,
-    },
-    {
-      imageUrl: "./img/burgers/dj.jpg",
-      title: "Джанго",
-      price: 590,
-    },
-    {
-      imageUrl: "./img/burgers/dk.jpg",
-      title: "Дикий койот",
-      price: 450,
-    },
-    {
-      imageUrl: "./img/burgers/dz.jpg",
-      title: "Дикий Запад",
-      price: 460,
-    },
-    {
-      imageUrl: "./img/burgers/dzM.jpg",
-      title: "Дикий Запад ( MAX)",
-      price: 790,
-    },
-    {
-      imageUrl: "./img/burgers/gk.jpg",
-      title: "Гранд каньон",
-      price: 470,
-    },
-    {
-      imageUrl: "./img/burgers/ktc.jpg",
-      title: "Кентукский",
-      price: 450,
-    },
-    {
-      imageUrl: "./img/burgers/lc.jpg",
-      title: "Лихой ковбой",
-      price: 550,
-    },
-    {
-      imageUrl: "./img/burgers/lv.jpg",
-      title: "Лас-Вегас",
-      price: 390,
-    },
-    {
-      imageUrl: "./img/burgers/mx.jpg",
-      title: "Мексиканец",
-      price: 490,
-    },
-    {
-      imageUrl: "./img/burgers/sh4.jpg",
-      title: "Шериф 4 сыра",
-      price: 490,
-    },
-    {
-      imageUrl: "./img/burgers/zl.jpg",
-      title: "Золотая лихорадка",
-      price: 580,
-    },
-  ];
+  const [prdcts, setPrdcts] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        await fetch("https://63c0abe099c0a15d28d9da20.mockapi.io/Products")
+          .then((res) => res.json())
+          .then((arr) => {
+            setPrdcts(arr);
+          });
+        setIsLoading(false);
+      } catch (error) {
+        alert("Ошибка запроса");
+        console.error(error);
+      }
+    }
+    fetchData();
+  }, []);
 
   const cats = [
     { cat: "Фирменные блюда" },
@@ -115,7 +62,9 @@ function App() {
           <Routes>
             <Route
               path="/"
-              element={<Home burgers={burgers} cats={cats} />}
+              element={
+                <Home isLoading={isLoading} cats={cats} prdcts={prdcts} />
+              }
             ></Route>
 
             <Route path="/Profile" element={<Lk />}></Route>
